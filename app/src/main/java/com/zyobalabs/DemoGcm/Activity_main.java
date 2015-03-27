@@ -7,11 +7,13 @@ import android.view.MenuItem;
 
 
 public class Activity_main extends Activity {
+    private EditText name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_main);
+        name = (EditText) findViewbyid(R.id.text);
     }
 
 
